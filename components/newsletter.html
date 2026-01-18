@@ -1,0 +1,839 @@
+<!-- Newsletter Component -->
+<section class="newsletter-section" id="newsletter">
+    <div class="container">
+        <div class="newsletter-container animate-on-scroll">
+            <!-- Decorative Elements -->
+            <div class="newsletter-decoration">
+                <div class="decoration-leaf leaf-1">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="decoration-leaf leaf-2">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="decoration-leaf leaf-3">
+                    <i class="fas fa-leaf"></i>
+                </div>
+            </div>
+            
+            <div class="newsletter-content">
+                <!-- Icon -->
+                <div class="newsletter-icon">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div class="icon-pulse"></div>
+                    </div>
+                </div>
+                
+                <!-- Text Content -->
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Updated with Agri Insights</h2>
+                    <p class="newsletter-subtitle">
+                        Subscribe to our newsletter for the latest agricultural trends, product updates, and farming tips.
+                    </p>
+                    <ul class="newsletter-benefits">
+                        <li><i class="fas fa-check-circle"></i> Monthly farming insights</li>
+                        <li><i class="fas fa-check-circle"></i> New product announcements</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive offers & discounts</li>
+                        <li><i class="fas fa-check-circle"></i> Technical guides & resources</li>
+                    </ul>
+                </div>
+                
+                <!-- Form -->
+                <div class="newsletter-form-wrapper">
+                    <form class="newsletter-form" id="mainNewsletterForm">
+                        <div class="form-header">
+                            <h3>Subscribe Now</h3>
+                            <p>Join thousands of farmers already receiving our updates</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Your Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select class="interest-select" required>
+                                <option value="" disabled selected>Select your interest</option>
+                                <option value="crop-nutrition">Crop Nutrition</option>
+                                <option value="crop-protection">Crop Protection</option>
+                                <option value="soil-health">Soil Health</option>
+                                <option value="bio-solutions">Bio Solutions</option>
+                                <option value="all">All Topics</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletterConsent" required>
+                            <label for="newsletterConsent">
+                                I agree to receive agricultural updates and marketing communications from Criyagen. 
+                                I can unsubscribe at any time.
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block newsletter-submit">
+                            <i class="fas fa-paper-plane"></i> Subscribe Now
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-lock"></i> We respect your privacy. No spam, ever.
+                        </p>
+                    </form>
+                    
+                    <!-- Subscription Stats -->
+                    <div class="subscription-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="5000">0</div>
+                            <div class="stat-label">Active Subscribers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="98">0</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="newsletter-trust">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure & Private</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Monthly Updates</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-times-circle"></i>
+                    <span>Unsubscribe Anytime</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Styles -->
+<style>
+    /* Newsletter Variables */
+    :root {
+        --newsletter-bg: linear-gradient(135deg, #f5f9f5, #e8f5e9);
+        --newsletter-primary: #2e7d32;
+        --newsletter-secondary: #4caf50;
+        --newsletter-border: rgba(46, 125, 50, 0.1);
+    }
+    
+    /* Newsletter Section */
+    .newsletter-section {
+        padding: 80px 0;
+        background: var(--newsletter-bg);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Decoration */
+    .newsletter-decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .decoration-leaf {
+        position: absolute;
+        color: rgba(46, 125, 50, 0.1);
+        font-size: 4rem;
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .leaf-1 {
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    
+    .leaf-2 {
+        top: 60%;
+        right: 8%;
+        animation-delay: 2s;
+    }
+    
+    .leaf-3 {
+        bottom: 20%;
+        left: 10%;
+        animation-delay: 4s;
+    }
+    
+    /* Newsletter Container */
+    .newsletter-container {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--newsletter-border);
+    }
+    
+    /* Newsletter Content */
+    .newsletter-content {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 50px;
+        align-items: start;
+        margin-bottom: 40px;
+    }
+    
+    /* Icon */
+    .newsletter-icon {
+        position: relative;
+    }
+    
+    .icon-wrapper {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, var(--newsletter-primary), var(--newsletter-secondary));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        position: relative;
+    }
+    
+    .icon-pulse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: inherit;
+        animation: pulse 2s infinite;
+        opacity: 0.5;
+    }
+    
+    /* Text Content */
+    .newsletter-text {
+        padding-right: 30px;
+    }
+    
+    .newsletter-title {
+        font-size: 2.5rem;
+        color: var(--newsletter-primary);
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .newsletter-subtitle {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+    
+    .newsletter-benefits {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .newsletter-benefits li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #555;
+        font-size: 0.95rem;
+    }
+    
+    .newsletter-benefits i {
+        color: var(--newsletter-primary);
+        font-size: 1rem;
+    }
+    
+    /* Form Wrapper */
+    .newsletter-form-wrapper {
+        min-width: 350px;
+    }
+    
+    .form-header {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .form-header h3 {
+        color: var(--newsletter-primary);
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+    }
+    
+    .form-header p {
+        color: #666;
+        font-size: 0.9rem;
+    }
+    
+    /* Form Elements */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .input-with-icon {
+        position: relative;
+    }
+    
+    .input-with-icon i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--newsletter-primary);
+    }
+    
+    .input-with-icon input,
+    .interest-select {
+        width: 100%;
+        padding: 15px 15px 15px 45px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: white;
+    }
+    
+    .interest-select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%232e7d32' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: 12px;
+        padding-right: 40px;
+    }
+    
+    .input-with-icon input:focus,
+    .interest-select:focus {
+        outline: none;
+        border-color: var(--newsletter-primary);
+        box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+    }
+    
+    /* Checkbox */
+    .form-checkbox {
+        margin: 25px 0;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .form-checkbox input[type="checkbox"] {
+        margin-top: 5px;
+        accent-color: var(--newsletter-primary);
+    }
+    
+    .form-checkbox label {
+        font-size: 0.85rem;
+        color: #666;
+        line-height: 1.5;
+        cursor: pointer;
+    }
+    
+    /* Submit Button */
+    .newsletter-submit {
+        padding: 16px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .newsletter-submit i {
+        margin-right: 10px;
+    }
+    
+    .newsletter-submit::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(1, 1) translate(-50%);
+        transform-origin: 50% 50%;
+    }
+    
+    .newsletter-submit:focus:not(:active)::after {
+        animation: ripple 1s ease-out;
+    }
+    
+    /* Form Note */
+    .form-note {
+        text-align: center;
+        font-size: 0.85rem;
+        color: #888;
+        margin-top: 15px;
+    }
+    
+    .form-note i {
+        margin-right: 5px;
+    }
+    
+    /* Subscription Stats */
+    .subscription-stats {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid var(--newsletter-border);
+    }
+    
+    .stat {
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--newsletter-primary);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 5px;
+    }
+    
+    /* Trust Badges */
+    .newsletter-trust {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .trust-badge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background: rgba(46, 125, 50, 0.1);
+        border-radius: 30px;
+        color: var(--newsletter-primary);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    .trust-badge i {
+        font-size: 1.1rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+        .newsletter-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        .newsletter-text {
+            padding-right: 0;
+            text-align: center;
+        }
+        
+        .newsletter-icon {
+            text-align: center;
+        }
+        
+        .icon-wrapper {
+            margin: 0 auto;
+        }
+        
+        .newsletter-form-wrapper {
+            min-width: 100%;
+        }
+        
+        .newsletter-benefits {
+            grid-template-columns: 1fr;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .newsletter-container {
+            padding: 30px;
+        }
+        
+        .newsletter-title {
+            font-size: 2rem;
+        }
+        
+        .subscription-stats {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .newsletter-trust {
+            gap: 15px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .newsletter-container {
+            padding: 25px 20px;
+        }
+        
+        .newsletter-title {
+            font-size: 1.8rem;
+        }
+        
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            font-size: 2.5rem;
+        }
+    }
+    
+    /* Animations */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.2;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(10deg);
+        }
+    }
+</style>
+
+<!-- Newsletter JavaScript -->
+<script>
+    // Newsletter Component JavaScript
+    class NewsletterComponent {
+        constructor() {
+            this.form = document.getElementById('mainNewsletterForm');
+            this.statNumbers = document.querySelectorAll('.stat-number');
+            
+            this.init();
+        }
+        
+        init() {
+            this.bindEvents();
+            this.initCounterAnimations();
+        }
+        
+        bindEvents() {
+            if (this.form) {
+                this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+            }
+        }
+        
+        handleSubmit(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this.form);
+            const data = {
+                name: formData.get('name') || '',
+                email: formData.get('email') || '',
+                interest: formData.get('interest') || ''
+            };
+            
+            // Validate form
+            if (!this.validateForm(data)) {
+                return;
+            }
+            
+            // Show loading state
+            const submitButton = this.form.querySelector('.newsletter-submit');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+            submitButton.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Success
+                this.showSuccessMessage(data.email);
+                this.form.reset();
+                
+                // Update stats
+                this.updateSubscriptionStats();
+                
+                // Restore button
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        }
+        
+        validateForm(data) {
+            let isValid = true;
+            
+            // Clear previous errors
+            this.clearErrors();
+            
+            // Validate name
+            if (!data.name.trim()) {
+                this.showError('name', 'Please enter your name');
+                isValid = false;
+            }
+            
+            // Validate email
+            if (!data.email.trim()) {
+                this.showError('email', 'Please enter your email address');
+                isValid = false;
+            } else if (!this.isValidEmail(data.email)) {
+                this.showError('email', 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            // Validate interest
+            if (!data.interest) {
+                this.showError('interest', 'Please select your area of interest');
+                isValid = false;
+            }
+            
+            // Validate consent
+            const consentCheckbox = this.form.querySelector('#newsletterConsent');
+            if (!consentCheckbox.checked) {
+                this.showError('consent', 'Please agree to receive updates');
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+        
+        isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        showError(field, message) {
+            let input;
+            
+            switch (field) {
+                case 'name':
+                    input = this.form.querySelector('input[type="text"]');
+                    break;
+                case 'email':
+                    input = this.form.querySelector('input[type="email"]');
+                    break;
+                case 'interest':
+                    input = this.form.querySelector('.interest-select');
+                    break;
+                case 'consent':
+                    const label = this.form.querySelector('label[for="newsletterConsent"]');
+                    this.showNotification(message, 'error');
+                    return;
+            }
+            
+            if (input) {
+                input.classList.add('error');
+                
+                // Create error message
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.textContent = message;
+                errorDiv.style.cssText = `
+                    color: #f44336;
+                    font-size: 0.85rem;
+                    margin-top: 5px;
+                    animation: fadeIn 0.3s ease;
+                `;
+                
+                input.parentNode.appendChild(errorDiv);
+            }
+        }
+        
+        clearErrors() {
+            // Remove error classes
+            const inputs = this.form.querySelectorAll('input, select');
+            inputs.forEach(input => {
+                input.classList.remove('error');
+                
+                // Remove error messages
+                const errorMsg = input.parentNode.querySelector('.error-message');
+                if (errorMsg) {
+                    errorMsg.remove();
+                }
+            });
+        }
+        
+        showSuccessMessage(email) {
+            // Create success message
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.innerHTML = `
+                <div class="success-content">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h4>Welcome to the Criyagen Community!</h4>
+                        <p>A confirmation email has been sent to <strong>${email}</strong>. 
+                        Please check your inbox and confirm your subscription.</p>
+                    </div>
+                    <button class="close-success">&times;</button>
+                </div>
+            `;
+            
+            // Add styles
+            successDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 10000;
+                background: white;
+                border-left: 4px solid #2e7d32;
+                border-radius: 8px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+                animation: slideInRight 0.3s ease;
+                max-width: 400px;
+            `;
+            
+            const successContent = successDiv.querySelector('.success-content');
+            successContent.style.cssText = `
+                padding: 20px;
+                display: flex;
+                gap: 15px;
+                align-items: flex-start;
+            `;
+            
+            successContent.querySelector('i').style.cssText = `
+                color: #2e7d32;
+                font-size: 2rem;
+                flex-shrink: 0;
+                margin-top: 5px;
+            `;
+            
+            successContent.querySelector('h4').style.cssText = `
+                color: #2e7d32;
+                margin: 0 0 10px 0;
+                font-size: 1.1rem;
+            `;
+            
+            successContent.querySelector('p').style.cssText = `
+                color: #555;
+                margin: 0;
+                font-size: 0.9rem;
+                line-height: 1.5;
+            `;
+            
+            successContent.querySelector('.close-success').style.cssText = `
+                background: none;
+                border: none;
+                color: #999;
+                font-size: 1.5rem;
+                cursor: pointer;
+                padding: 0;
+                margin-left: 10px;
+                flex-shrink: 0;
+            `;
+            
+            document.body.appendChild(successDiv);
+            
+            // Close button
+            successDiv.querySelector('.close-success').addEventListener('click', () => {
+                successDiv.style.animation = 'slideOutRight 0.3s ease forwards';
+                setTimeout(() => successDiv.remove(), 300);
+            });
+            
+            // Auto remove after 8 seconds
+            setTimeout(() => {
+                if (document.body.contains(successDiv)) {
+                    successDiv.style.animation = 'slideOutRight 0.3s ease forwards';
+                    setTimeout(() => successDiv.remove(), 300);
+                }
+            }, 8000);
+        }
+        
+        showNotification(message, type) {
+            // This would be a more sophisticated notification system
+            alert(`${type.toUpperCase()}: ${message}`);
+        }
+        
+        initCounterAnimations() {
+            this.statNumbers.forEach(stat => {
+                const observer = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        const target = parseInt(stat.getAttribute('data-count'));
+                        const suffix = stat.textContent.replace(/[0-9]/g, '');
+                        this.animateCounter(stat, target, suffix);
+                        observer.unobserve(stat);
+                    }
+                }, { threshold: 0.5 });
+                
+                observer.observe(stat);
+            });
+        }
+        
+        animateCounter(element, target, suffix) {
+            const duration = 2000;
+            const startTime = Date.now();
+            const startValue = 0;
+            
+            const updateCounter = () => {
+                const currentTime = Date.now();
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const currentValue = Math.floor(easeOutQuart * target);
+                
+                element.textContent = currentValue + suffix;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                }
+            };
+            
+            updateCounter();
+        }
+        
+        updateSubscriptionStats() {
+            // Increment subscriber count
+            const subscriberStat = this.statNumbers[0];
+            const currentCount = parseInt(subscriberStat.textContent);
+            const newCount = currentCount + 1;
+            
+            subscriberStat.setAttribute('data-count', newCount);
+            this.animateCounter(subscriberStat, newCount, '');
+        }
+    }
+    
+    // Initialize newsletter when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        window.criyagenNewsletter = new NewsletterComponent();
+    });
+</script>
