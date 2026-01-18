@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criyagen Agri & Biotech | Connecting Soil to Soul via Happy Crops</title>
+    <meta name="description" content="Criyagen Agri & Biotech - Pioneering agri-input products for comprehensive crop nutrition and protection since 2008. Sustainable agriculture solutions.">
+    <meta name="keywords" content="agriculture, biotech, crop nutrition, crop protection, sustainable farming, agri-inputs">
+    <meta name="author" content="Criyagen Agri & Biotech">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Criyagen Agri & Biotech">
+    <meta property="og:description" content="Connecting Soil to Soul via Happy Crops">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://www.criyagen.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Criyagen Agri & Biotech">
+    <meta name="twitter:description" content="Pioneering sustainable agriculture solutions">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/images/hero-bg.jpg" as="image">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-spinner">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h2>Criyagen</h2>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="mainHeader">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Criyagen Agri & Biotech Logo" width="180" height="60">
+                    <span class="logo-text">Criyagen</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> About Us
+                    </a>
+                    
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle">
+                            <i class="fas fa-boxes"></i> Products <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="products.html#nutrition" class="dropdown-item">Crop Nutrition</a>
+                            <a href="products.html#protection" class="dropdown-item">Crop Protection</a>
+                            <a href="products.html#soil" class="dropdown-item">Soil Health</a>
+                            <a href="products.html#bio" class="dropdown-item">Bio Solutions</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                    
+                    <!-- CTA Button -->
+                    <a href="contact.html#quote" class="btn btn-small btn-primary nav-cta">
+                        <i class="fas fa-quote-left"></i> Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Animated Badge -->
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge">Since 2008</span>
+                    <span class="badge-text">Trusted by Farmers</span>
+                </div>
+                
+                <!-- Main Title -->
+                <h1 class="hero-title animate-fade-up" data-delay="0.1">
+                    <span class="title-line">Connecting Soil to Soul</span>
+                    <span class="title-line">via Happy Crops</span>
+                </h1>
+                
+                <!-- Tagline -->
+                <p class="hero-tagline animate-fade-up" data-delay="0.2">
+                    Pioneering sustainable agriculture through innovative biotech solutions for comprehensive crop nutrition and protection.
+                </p>
+                
+                <!-- Stats -->
+                <div class="hero-stats animate-fade-up" data-delay="0.3">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">Thousands Acres</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-cta animate-fade-up" data-delay="0.4">
+                    <a href="products.html" class="btn btn-primary btn-large ripple">
+                        <i class="fas fa-seedling"></i> Explore Products
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-phone-alt"></i> Contact Us
+                    </a>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator animate-fade-up" data-delay="0.5">
+                    <a href="#about" class="scroll-link">
+                        <span class="mouse">
+                            <span class="wheel"></span>
+                        </span>
+                        <span class="scroll-text">Scroll to explore</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section about-preview" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle animate-on-scroll">Who We Are</span>
+                <h2 class="section-title animate-on-scroll">About Criyagen</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-wrapper">
+                        <img src="assets/images/about-preview.jpg" alt="Criyagen Agriculture Solutions" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Watch Our Story</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text animate-on-scroll" data-delay="0.2">
+                    <h3>Transforming Agriculture Since 2008</h3>
+                    <p>Criyagen Agri & Biotech Pvt. Ltd. is a pioneering life science company dedicated to revolutionizing agriculture through innovative biotech solutions. Established in 2008, we have been at the forefront of developing comprehensive agri-input products for crop nutrition and protection.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ISO 9001:2015 Certified</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eco-friendly Formulations</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Research-driven Innovations</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Farmer-centric Approach</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-actions">
+                        <a href="about.html" class="btn btn-secondary">
+                            <i class="fas fa-book-open"></i> Read Our Story
+                        </a>
+                        <a href="about.html#team" class="btn btn-outline">
+                            <i class="fas fa-users"></i> Meet Our Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="section values">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle animate-on-scroll">Our Philosophy</span>
+                <h2 class="section-title animate-on-scroll">Core Values</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+            
+            <div class="values-grid">
+                <!-- Mission Card -->
+                <div class="value-card animate-on-scroll">
+                    <div class="card-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">Serving millions of acres while enabling farmers as Agri entrepreneurs through sustainable and innovative solutions.</p>
+                    <div class="card-footer">
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                </div>
+                
+                <!-- Vision Card -->
+                <div class="value-card animate-on-scroll" data-delay="0.1">
+                    <div class="card-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p class="card-text">Connecting Soil to Soul via Happy Crops - creating a harmonious ecosystem where agriculture thrives sustainably.</p>
+                    <div class="card-footer">
+                        <span class="tag">Ecosystem</span>
+                        <span class="tag">Harmony</span>
+                    </div>
+                </div>
+                
+                <!-- Commitment Card -->
+                <div class="value-card animate-on-scroll" data-delay="0.2">
+                    <div class="card-icon">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Our Commitment</h3>
+                    <p class="card-text">Protecting environment and soil ecosystem through scientific innovation and responsible agricultural practices.</p>
+                    <div class="card-footer">
+                        <span class="tag">Responsibility</span>
+                        <span class="tag">Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle animate-on-scroll">Why Criyagen</span>
+                <h2 class="section-title animate-on-scroll">Our Advantages</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+            
+            <div class="why-content">
+                <div class="why-list">
+                    <div class="why-item animate-on-scroll">
+                        <div class="why-icon">
+                            <i class="fas fa-leaf"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Eco-friendly & Sustainable</h4>
+                            <p>Products designed with environmental sustainability at their core, reducing ecological footprint.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-item animate-on-scroll" data-delay="0.1">
+                        <div class="why-icon">
+                            <i class="fas fa-flask"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Strong R&D Investment</h4>
+                            <p>Continuous scientific innovation through our state-of-the-art research facilities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-item animate-on-scroll" data-delay="0.2">
+                        <div class="why-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="why-text">
+                            <h4>High Yield, Low Cost</h4>
+                            <p>Cost-effective solutions that maximize productivity while minimizing input costs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-item animate-on-scroll" data-delay="0.3">
+                        <div class="why-icon">
+                            <i class="fas fa-globe"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Global Market Focus</h4>
+                            <p>Solutions tailored for both domestic and international agricultural challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-image animate-on-scroll" data-delay="0.4">
+                    <div class="image-container">
+                        <img src="assets/images/why-us.jpg" alt="Why Choose Criyagen" loading="lazy">
+                        <div class="floating-badges">
+                            <div class="badge">
+                                <i class="fas fa-award"></i>
+                                <span>Quality Certified</span>
+                            </div>
+                            <div class="badge">
+                                <i class="fas fa-users"></i>
+                                <span>Expert Team</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="section products-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle animate-on-scroll">Our Solutions</span>
+                <h2 class="section-title animate-on-scroll">Product Categories</h2>
+                <div class="section-divider animate-on-scroll"></div>
+                <p class="section-description animate-on-scroll">Comprehensive solutions for modern agriculture challenges</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Crop Nutrition -->
+                <div class="product-category animate-on-scroll">
+                    <div class="category-icon">
+                        <i class="fas fa-apple-alt"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="category-title">Crop Nutrition</h3>
+                    <p class="category-desc">Specialized fertilizers and growth promoters for optimal plant development.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Balanced NPK formulations</li>
+                        <li><i class="fas fa-check"></i> Micronutrient supplements</li>
+                        <li><i class="fas fa-check"></i> Growth regulators</li>
+                    </ul>
+                    <a href="products.html#nutrition" class="category-link">
+                        View Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Crop Protection -->
+                <div class="product-category animate-on-scroll" data-delay="0.1">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="category-title">Crop Protection</h3>
+                    <p class="category-desc">Bio-pesticides and disease management solutions for healthy crops.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Bio-pesticides</li>
+                        <li><i class="fas fa-check"></i> Fungicides</li>
+                        <li><i class="fas fa-check"></i> Herbicides</li>
+                    </ul>
+                    <a href="products.html#protection" class="category-link">
+                        View Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Soil Health -->
+                <div class="product-category animate-on-scroll" data-delay="0.2">
+                    <div class="category-icon">
+                        <i class="fas fa-mountain"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="category-title">Soil Health</h3>
+                    <p class="category-desc">Soil conditioners and microbial solutions for improved soil fertility.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Soil conditioners</li>
+                        <li><i class="fas fa-check"></i> Microbial consortia</li>
+                        <li><i class="fas fa-check"></i> Organic amendments</li>
+                    </ul>
+                    <a href="products.html#soil" class="category-link">
+                        View Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Bio Solutions -->
+                <div class="product-category animate-on-scroll" data-delay="0.3">
+                    <div class="category-icon">
+                        <i class="fas fa-recycle"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3 class="category-title">Bio Solutions</h3>
+                    <p class="category-desc">Organic and sustainable agricultural inputs for eco-friendly farming.</p>
+                    <ul class="category-features">
+                        <li><i class="fas fa-check"></i> Bio-fertilizers</li>
+                        <li><i class="fas fa-check"></i> Bio-stimulants</li>
+                        <li><i class="fas fa-check"></i> Organic pesticides</li>
+                    </ul>
+                    <a href="products.html#bio" class="category-link">
+                        View Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center animate-on-scroll" data-delay="0.4">
+                <a href="products.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-box-open"></i> View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- R&D Innovation -->
+    <section class="section rnd-innovation">
+        <div class="container">
+            <div class="rnd-content">
+                <div class="rnd-image animate-on-scroll">
+                    <div class="image-stack">
+                        <div class="stack-item stack-1">
+                            <img src="assets/images/lab1.jpg" alt="R&D Laboratory" loading="lazy">
+                        </div>
+                        <div class="stack-item stack-2">
+                            <img src="assets/images/lab2.jpg" alt="Research Facility" loading="lazy">
+                        </div>
+                        <div class="stack-item stack-3">
+                            <div class="stats-box">
+                                <div class="stat">
+                                    <div class="stat-number" data-count="85">0</div>
+                                    <div class="stat-label">R&D Investment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rnd-text animate-on-scroll" data-delay="0.2">
+                    <span class="section-subtitle">Innovation at Core</span>
+                    <h2 class="section-title">R&D Excellence</h2>
+                    <div class="section-divider"></div>
+                    
+                    <p>At Criyagen, we invest heavily in research and development to create innovative solutions that address modern agricultural challenges. Our dedicated R&D team works on sustainable agriculture technologies.</p>
+                    
+                    <div class="progress-bars">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Research Investment</span>
+                                <span class="progress-value">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Innovation Rate</span>
+                                <span class="progress-value">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-label">Success Rate</span>
+                                <span class="progress-value">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rnd-features">
+                        <div class="feature">
+                            <i class="fas fa-microscope"></i>
+                            <span>Advanced Laboratories</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-user-md"></i>
+                            <span>Expert Scientists</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-flask"></i>
+                            <span>Continuous Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle animate-on-scroll">Farmer Stories</span>
+                <h2 class="section-title animate-on-scroll">What Farmers Say</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="slider-container" id="testimonialSlider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Criyagen products transformed our farm yield. The soil health improved significantly within one season!"</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/farmer1.jpg" alt="Rajesh Kumar" class="author-img">
+                                <div class="author-info">
+                                    <h4>Rajesh Kumar</h4>
+                                    <span class="author-role">Wheat Farmer, Punjab</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"The technical support team is excellent. They helped us implement the right solutions for our specific needs."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/farmer2.jpg" alt="Priya Sharma" class="author-img">
+                                <div class="author-info">
+                                    <h4>Priya Sharma</h4>
+                                    <span class="author-role">Rice Farmer, Uttar Pradesh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">"Sustainable and effective products. Our farm's productivity increased by 40% using Criyagen solutions."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/farmer3.jpg" alt="Amit Patel" class="author-img">
+                                <div class="author-info">
+                                    <h4>Amit Patel</h4>
+                                    <span class="author-role">Vegetable Grower, Maharashtra</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-prev" id="prevTestimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="slider-next" id="nextTestimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Trusted By</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+            
+            <div class="partners-grid animate-on-scroll">
+                <div class="partner-logo">
+                    <img src="assets/images/partner1.png" alt="Partner 1" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner2.png" alt="Partner 2" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner3.png" alt="Partner 3" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner4.png" alt="Partner 4" loading="lazy">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/images/partner5.png" alt="Partner 5" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <div class="cta-text">
+                    <h2 class="cta-title">Ready to Grow More with Sustainable Solutions?</h2>
+                    <p class="cta-description">Join thousands of farmers who trust Criyagen for their agricultural needs. Get expert consultation and customized solutions.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-primary btn-large btn-pulse">
+                        <i class="fas fa-phone-alt"></i> Get Free Consultation
+                    </a>
+                    <a href="tel:+911234567890" class="btn btn-outline btn-large">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-box animate-on-scroll">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="newsletter-content">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get updates on new products, farming tips, and agricultural insights.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                        <div class="form-note">
+                            <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe at any time.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="Criyagen Logo" width="150" height="50">
+                        <h3>Criyagen Agri & Biotech</h3>
+                    </div>
+                    <p class="footer-desc">
+                        Pioneering agri-input products for comprehensive crop nutrition and protection since 2008.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="about.html#team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="about.html#careers"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html#nutrition"><i class="fas fa-chevron-right"></i> Crop Nutrition</a></li>
+                        <li><a href="products.html#protection"><i class="fas fa-chevron-right"></i> Crop Protection</a></li>
+                        <li><a href="products.html#soil"><i class="fas fa-chevron-right"></i> Soil Health</a></li>
+                        <li><a href="products.html#bio"><i class="fas fa-chevron-right"></i> Bio Solutions</a></li>
+                        <li><a href="products.html#technical"><i class="fas fa-chevron-right"></i> Technical Sheets</a></li>
+                        <li><a href="products.html#certifications"><i class="fas fa-chevron-right"></i> Certifications</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>Criyagen Agri & Biotech Pvt. Ltd.<br>
+                                Agri-Tech Park, Sector 62<br>
+                                Noida, Uttar Pradesh 201301</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone Numbers</strong>
+                                <p>Sales: +91-9876543210<br>
+                                Support: +91-9876543211</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@criyagen.com<br>
+                                sales@criyagen.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2023 Criyagen Agri & Biotech Pvt. Ltd. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+            
+            <!-- Back to Top -->
+            <button class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
+    
+    <!-- Add any additional scripts here -->
+    <script>
+        // Initialize specific home page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize testimonial slider
+            initTestimonialSlider();
+            
+            // Initialize newsletter form
+            initNewsletterForm();
+            
+            // Initialize particle effect for hero
+            initParticleEffect();
+        });
+        
+        function initTestimonialSlider() {
+            const slider = document.getElementById('testimonialSlider');
+            const slides = slider.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('.slider-dots .dot');
+            const prevBtn = document.getElementById('prevTestimonial');
+            const nextBtn = document.getElementById('nextTestimonial');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                // Show current slide
+                slides[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            // Next slide
+            nextBtn.addEventListener('click', () => {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            });
+            
+            // Previous slide
+            prevBtn.addEventListener('click', () => {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            });
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+            
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }, 5000);
+        }
+        
+        function initNewsletterForm() {
+            const form = document.getElementById('newsletterForm');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = this.querySelector('input[type="email"]').value;
+                
+                // Simple validation
+                if (!email || !email.includes('@')) {
+                    showNotification('Please enter a valid email address.', 'error');
+                    return;
+                }
+                
+                // Show loading state
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    showNotification('Thank you for subscribing to our newsletter!', 'success');
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 1500);
+            });
+        }
+        
+        function initParticleEffect() {
+            const particles = document.getElementById('particles');
+            if (!particles) return;
+            
+            // Create particle effect
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = `${Math.random() * 5 + 2}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                particles.appendChild(particle);
+            }
+        }
+        
+        function showNotification(message, type) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                    <span>${message}</span>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Add styles if not already present
+            if (!document.querySelector('#notification-styles')) {
+                const style = document.createElement('style');
+                style.id = 'notification-styles';
+                style.textContent = `
+                    .notification {
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        z-index: 9999;
+                        animation: slideInRight 0.3s ease;
+                        max-width: 400px;
+                    }
+                    
+                    .notification.success {
+                        background: linear-gradient(135deg, #2e7d32, #4caf50);
+                        color: white;
+                    }
+                    
+                    .notification.error {
+                        background: linear-gradient(135deg, #f44336, #e53935);
+                        color: white;
+                    }
+                    
+                    .notification-content {
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+                    }
+                    
+                    .notification-close {
+                        background: none;
+                        border: none;
+                        color: white;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        margin-left: auto;
+                    }
+                    
+                    @keyframes slideInRight {
+                        from {
+                            transform: translateX(100%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.style.animation = 'slideOutRight 0.3s ease forwards';
+                setTimeout(() => notification.remove(), 300);
+            }, 5000);
+            
+            // Close button
+            notification.querySelector('.notification-close').addEventListener('click', () => {
+                notification.style.animation = 'slideOutRight 0.3s ease forwards';
+                setTimeout(() => notification.remove(), 300);
+            });
+        }
+    </script>
+</body>
+</html>
